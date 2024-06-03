@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Lab Task</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>1.Heading</h2>
+
+<h1>My First Heading</h1>
+<h2>My Second Heading</h2>
+<h3>My Third Heading</h3>
+<h4>My Fourth Heading</h4>
+<h5>My Fifth Heading</h5>
+<h6>My Sixth Heading</h6>
+
+<h2>2.PARAGRAPH</h2>
+
+<p>My first paragraph.</p>
+<p>বাংলাদেশ দক্ষিণ এশিয়ার একটি রাষ্ট্র।</p>
+<p>দেশটির উত্তর, পূর্ব ও পশ্চিম সীমানায় ভারত ও দক্ষিণ-পূর্ব সীমানায় মায়ানমার; দক্ষিণে বঙ্গোপসাগর। সাবেক “বঙ্গ” বা “বাংলা” নামক ভূখন্ডের পূর্ব অংশ যা পূর্ব বাংলা নামে পরিচিত ছিল সেটি বর্তমান বাংলাদেশ রাষ্ট্র।</p>
+
+<h2>3. ✉️ &#9993 EMAIL</h2>
+<p>21-44989-2@student.aiub.edu</p>
+<br><a href="21-44989-2@student.aiub.edu">21-44989-2@student.aiub.edu</a></br>
+
+<h2>4.IMAGE</h2>
+
+<img src="Bornaddo.jpg" alt="Bornaddo">
+<img src="Bornaddo.jpg" alt="Bornaddo">
+<br><img src="Bornaddo.jpg" alt="Bornaddo"></br>
+
+<h2>4.TABLE</h2>
+
+<table id="dataTable">
+    <tr>
+        <th>Name</th>
+        <th>Id</th>
+        <th>Contact</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>Sk Muktadir Hossain</td>
+        <td>21-44989-2</td>
+        <td>+88015-90007871</td>
+        <td>skmuktadir566@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Shakir Mahmud</td>
+        <td>21-44789-2</td>
+        <td>+88015-90007871</td>
+        <td>Shakir566@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Rahat Rayhan</td>
+        <td>21-54989-2</td>
+        <td>+88015-90007871</td>
+        <td>Rahat@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Shanzid Mahmud</td>
+        <td>22-64678-2</td>
+        <td>+88015-90007871</td>
+        <td>shanzid@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Zulfiquer Mahmud</td>
+        <td>23-44332-2</td>
+        <td>+88015-90007871</td>
+        <td>Zulfiquer@gmail.com</td>
+    </tr>    
+</table>
+
+<h2>5.Form</h2>
+
+<h2>5.Form</h2>
+<form id="dataForm">
+    <br>
+    <label for="fname">Name:</label><br>
+    <input type="text" id="fname" name="fname" value="Pritam Khan Boni"><br>
+    <label for="id">Id:</label><br>
+    <input type="text" id="id" name="id" value="21-448965-1"><br>
+    <label for="Contact">Contact:</label><br>
+    <input type="text" id="Contact" name="Contact" value="+88016-0989865"><br>
+    <label for="Email">Email:</label><br>
+    <input type="text" id="Email" name="Email" value="pritam@gmail.com"><br>
+    <br>
+    <input type="button" value="Submit" onclick="addRow()">
+</form>
+
+<script>
+    function addRow() {
+        // Get form data
+        var name = document.getElementById('fname').value;
+        var id = document.getElementById('id').value;
+        var contact = document.getElementById('Contact').value;
+        var email = document.getElementById('Email').value;
+
+        // Get the table
+        var table = document.getElementById('dataTable');
+
+        // Create a new row
+        var newRow = table.insertRow();
+
+        // Insert new cells
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+        var cell4 = newRow.insertCell(3);
+
+        // Add values to the cells
+        cell1.innerHTML = name;
+        cell2.innerHTML = id;
+        cell3.innerHTML = contact;
+        cell4.innerHTML = email;
+
+        // Clear form fields after adding the row
+        document.getElementById('dataForm').reset();
+    }
+</script>
+</body>
+</html>
+<h2>6.Order List</h2>
+
+<ol>
+    <li>Coffee</li>
+    <li>Tea
+      <ol>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ol>
+    </li>
+  </ol>
+  <p>Hello World</p>
+<div>Hello World</div>
