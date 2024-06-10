@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Borrow a Book</title>
+    <style>
+        img {
+            width: 10%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Borrow a Book</h1><br>
+    <h5>Why a Daughter Needs a Dad</h5>
+    <img src="Why_a_Daughter_Needs_a_Dad.png" alt="Book 1"> <br>
+    <h5>MICHAEL CRICHTON CREATOR OF JURASSIC PARK JAMES PATTERSON</h5>
+    <img src="MICHAEL_CRICHTON CREATOR_OF JURASSIC_PARK JAMES_PATERSON.png" alt="Book 2">
+
+    <form action="process.php" method="POST">
+        <label for="book">Select a Book:</label>
+        <select name="book" id="book">
+            <option value="Book 1" class="book-option">Why a Daughter Needs a Dad</option>
+            <option value="Book 2" class="book-option">MICHAEL CRICHTON CREATOR OF JURASSIC PARK JAMES PATTERSON</option>
+            <option value="Book 3" class="book-option">Book 3</option>
+            <!-- Add more books as needed -->
+        </select>
+        <br><br>
+        <label for="id">ID:</label><br>
+        <input type="text" name="id" id="id" required>
+        <br><br>
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" name="contact" id="contact" required>
+        <br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <input type="submit" value="Borrow Book">
+    </form>
+
+</body>
+</html>
