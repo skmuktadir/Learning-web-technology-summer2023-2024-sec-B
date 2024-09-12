@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    background: #f0f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Form styling */
+.my-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.my-form input[type="text"],
+.my-form input[type="password"],
+.my-form input[type="date"],
+.my-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.my-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.my-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Button styling */
+.button {
+    background-color: coral;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff7043;
+}
+
+/* Sidebar and Main Content */
+.main-block {
+    width: 60%;
+    float: left;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 35%;
+    float: right;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Headings and Titles */
+h1, h2, h3 {
+    color: #333;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Feedback message styling */
+.success-message {
+    color: #4CAF50;
+    background-color: #e6ffe6;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #f44336;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-left: 5px solid #f44336;
+    margin: 15px 0;
+    border-radius: 5px;
+}
