@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | RestaurantPro</title>
+    <link rel="stylesheet" href="../asset/css/login.css" />
+</head>
+<body>
+    <fieldset>
+        <legend>Login</legend>
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return false;">
+            <table align="center">
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="text" id="email" name="email" onkeyup="validateEmail()" />
+                    </td>
+                    <td>
+                        <p id="emailMessage"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" id="password" name="password" onkeyup="validatePassword()" />
+                    </td>
+                    <td>
+                        <p id="passwordMessage"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="button" name="submit" value="Submit" onclick="ajaxLogin()" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="extra-links">
+            <a href="signup.html">Sign Up</a> | 
+            <a href="forgot_password.html">Forgot Password?</a>
+        </div>
+    </fieldset>
+    <script src="../asset/js/login.js"></script>
+</body>
+</html>

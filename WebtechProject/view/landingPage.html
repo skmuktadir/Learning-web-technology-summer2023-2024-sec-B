@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RestaurantPro - Complete Restaurant Management</title>
+  <link rel="stylesheet" href="../asset/css/landingpage.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo">🍽️ RestaurantPro</div>
+      <nav class="nav-buttons">
+        <a href="landingPage.html" class="nav-btn">Home</a>
+        <a href="login.html" class="nav-btn">Login</a>
+        <a href="signup.html" class="nav-btn">Signup</a>
+        <a href="info.php" class="nav-btn">Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Complete Restaurant Management Solution</h1>
+    <p>
+      Streamline your restaurant operations with our comprehensive management system. From
+      order taking to inventory management, we've got you covered.
+    </p>
+    <div class="cta-buttons">
+      <a href="#" class="cta-btn primary" onclick="openDemo()">Try Live Demo</a>
+      <a href="#" class="cta-btn">Start Free Trial</a>
+      <a href="#" class="cta-btn">Contact Sales</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Powerful Features for Your Restaurant</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>Order Management</h3>
+          <p>
+            Efficiently manage dine-in, takeout, and delivery orders with real-time tracking and
+            kitchen integration.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🍽️</div>
+          <h3>Menu Management</h3>
+          <p>Create, update, and organize your menu items with pricing, descriptions, and availability controls.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Staff Management</h3>
+          <p>Schedule staff, track hours, manage roles and permissions, and monitor performance metrics.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Analytics & Reports</h3>
+          <p>Get detailed insights into sales, popular items, peak hours, and financial performance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Inventory Control</h3>
+          <p>Track ingredients, manage suppliers, set reorder alerts, and reduce food waste.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Payment Processing</h3>
+          <p>Accept multiple payment methods including cash, cards, and digital wallets seamlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section class="demo">
+    <div class="container">
+      <h2 class="section-title">See It In Action</h2>
+      <div class="demo-grid">
+        <div class="demo-card">
+          <h3>📱 Today's Menu</h3>
+          <div class="menu-item">
+            <span class="menu-item-name">Grilled Salmon</span>
+            <span class="menu-item-price">$24.99</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Pasta Carbonara</span>
+            <span class="menu-item-price">$18.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Caesar Salad</span>
+            <span class="menu-item-price">$12.99</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Chocolate Cake</span>
+            <span class="menu-item-price">$8.99</span>
+          </div>
+          <button class="interactive-btn" onclick="updateMenu()">Update Menu</button>
+        </div>
+
+        <div class="demo-card">
+          <h3>🔥 Live Orders</h3>
+          <div class="order-item">
+            <span>Table 5 - Order #1234</span>
+            <span class="order-status status-preparing">Preparing</span>
+          </div>
+          <div class="order-item">
+            <span>Table 2 - Order #1235</span>
+            <span class="order-status status-ready">Ready</span>
+          </div>
+          <div class="order-item">
+            <span>Takeout - Order #1236</span>
+            <span class="order-status status-served">Served</span>
+          </div>
+          <div class="order-item">
+            <span>Table 8 - Order #1237</span>
+            <span class="order-status status-preparing">Preparing</span>
+          </div>
+          <button class="interactive-btn" onclick="addOrder()">New Order</button>
+        </div>
+
+        <div class="demo-card">
+          <h3>📈 Quick Stats</h3>
+          <div class="menu-item">
+            <span>Today's Revenue</span>
+            <span class="menu-item-price" id="revenue">$2,847.50</span>
+          </div>
+          <div class="menu-item">
+            <span>Orders Completed</span>
+            <span id="orders-count">127</span>
+          </div>
+          <div class="menu-item">
+            <span>Average Order Value</span>
+            <span id="avg-order">$22.42</span>
+          </div>
+          <div class="menu-item">
+            <span>Tables Occupied</span>
+            <span id="tables-occupied">8/15</span>
+          </div>
+          <button class="interactive-btn" onclick="refreshStats()">Refresh Stats</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <h2 class="section-title">Trusted by Restaurants Worldwide</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">5,000+</div>
+          <div class="stat-label">Active Restaurants</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2M+</div>
+          <div class="stat-label">Orders Processed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Modal -->
+  <div id="demoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDemo()">&times;</span>
+      <h2>🚀 Live Demo Access</h2>
+      <p>Experience the full power of RestaurantPro with our interactive demo.</p>
+      <form>
+        <div style="margin: 1rem 0;">
+          <input
+            type="text"
+            placeholder="Restaurant Name"
+            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;"
+          />
+        </div>
+        <div style="margin: 1rem 0;">
+          <input
+            type="email"
+            placeholder="Email Address"
+            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;"
+          />
+        </div>
+        <button
+          type="button"
+          class="interactive-btn"
+          onclick="startDemo()"
+          style="width: 100%; margin: 1rem 0;"
+        >
+          Start Demo Now
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p><strong>RestaurantPro - Complete Restaurant Management Solution</strong></p>
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Support</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>&copy; 2025 RestaurantPro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Demo functionality
+    function openDemo() {
+      document.getElementById('demoModal').style.display = 'block';
+    }
+    function closeDemo() {
+      document.getElementById('demoModal').style.display = 'none';
+    }
+    function startDemo() {
+      alert('🎉 Demo started! You would now be redirected to the full demo environment.');
+      closeDemo();
+    }
+    function updateMenu() {
+      alert('✅ Menu updated successfully! New items added.');
+    }
+    function addOrder() {
+      const orderNumber = Math.floor(Math.random() * 9000) + 1000;
+      alert(`🆕 New order #${orderNumber} added to the queue!`);
+    }
+    function refreshStats() {
+      const revenue = document.getElementById('revenue');
+      const ordersCount = document.getElementById('orders-count');
+      const avgOrder = document.getElementById('avg-order');
+      const tablesOccupied = document.getElementById('tables-occupied');
+
+      revenue.textContent = '$' + (Math.random() * 3000 + 2000).toFixed(2);
+      ordersCount.textContent = Math.floor(Math.random() * 50 + 100);
+      avgOrder.textContent = '$' + (Math.random() * 10 + 20).toFixed(2);
+      tablesOccupied.textContent = Math.floor(Math.random() * 8 + 5) + '/15';
+
+      alert('📊 Stats refreshed with latest data!');
+    }
+    window.onclick = function (event) {
+      const modal = document.getElementById('demoModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    };
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.style.background = 'rgba(255, 255, 255, 0.98)';
+        header.style.boxShadow = '0 2px 25px rgba(0,0,0,0.15)';
+      } else {
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+        header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+      }
+    });
+    function animateOnScroll() {
+      const elements = document.querySelectorAll('.feature-card, .demo-card, .stat-card');
+
+      elements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.style.animation = 'fadeInUp 0.6s ease forwards';
+        }
+      });
+    }
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+
+    function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+
+      const timeElements = document.querySelectorAll('.current-time');
+      timeElements.forEach((element) => {
+        element.textContent = timeString;
+      });
+    }
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
